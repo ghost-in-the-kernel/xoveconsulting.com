@@ -1,0 +1,10 @@
+{
+  "tool": "suite-builder",
+  "version": "1.39.0",
+  "framework": "playwright",
+  "generatedAt": "2026-10-01T20:31:32.872Z",
+  "command": "suite-builder build https://xoveconsulting.com/",
+  "templates": "xoveconsulting.com.templates.json",
+  "crawl": "xoveconsulting.com.crawl.json",
+  "crawlFileSaved": "2026-10-01T20:31:32.775Z"
+}

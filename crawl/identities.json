@@ -1,0 +1,84 @@
+{
+  "tool": "suite-builder",
+  "ledgerVersion": 1,
+  "entities": [
+    {
+      "id": "type:/",
+      "kind": "page-type",
+      "introducedAt": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7",
+      "cls": "HomePage",
+      "patterns": [
+        "/"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7"
+      }
+    },
+    {
+      "id": "type:/*",
+      "kind": "page-type",
+      "introducedAt": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7",
+      "cls": "SiteDetailPage",
+      "patterns": [
+        "/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7"
+      }
+    },
+    {
+      "id": "type:/*#2",
+      "kind": "page-type",
+      "introducedAt": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7",
+      "cls": "SiteDetailPage2",
+      "patterns": [
+        "/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7"
+      }
+    },
+    {
+      "id": "type:/*#3",
+      "kind": "page-type",
+      "introducedAt": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7",
+      "cls": "SiteDetailPage3",
+      "patterns": [
+        "/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7"
+      }
+    },
+    {
+      "id": "type:/*#4",
+      "kind": "page-type",
+      "introducedAt": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7",
+      "cls": "SiteDetailPage4",
+      "patterns": [
+        "/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7"
+      }
+    },
+    {
+      "id": "type:/careers.php",
+      "kind": "page-type",
+      "introducedAt": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7",
+      "cls": "CareersPage",
+      "patterns": [
+        "/careers.php"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "8f028c95455441f0106bb341a2532f58a288fe9121cb21375e35bb9fc8a79dc7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "tool": "suite-builder",
+  "kind": "templates",
+  "version": 2,
+  "startUrl": "https://xoveconsulting.com/",
+  "origin": "https://xoveconsulting.com",
+  "pagesRead": 12,
+  "menu": [
+    {
+      "to": "https://xoveconsulting.com/index.php",
+      "href": "index.php",
+      "text": "Xove Consulting Services",
+      "region": "header",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail-page2"
+    },
+    {
+      "to": "https://xoveconsulting.com/about.php",
+      "href": "about.php",
+      "text": "About Xove",
+      "region": "header",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail-page3"
+    },
+    {
+      "to": "https://xoveconsulting.com/services.php",
+      "href": "services.php",
+      "text": "Xove Services",
+      "region": "header",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail"
+    },
+    {
+      "to": "https://xoveconsulting.com/application-development.php",
+      "href": "application-development.php",
+      "text": "App Development",
+      "region": "footer",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail"
+    },
+    {
+      "to": "https://xoveconsulting.com/e2eqaservices.php",
+      "href": "e2eqaservices.php",
+      "text": "E2E QA Services",
+      "region": "footer",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail-page4"
+    },
+    {
+      "to": "https://xoveconsulting.com/consulting-services.php",
+      "href": "consulting-services.php",
+      "text": "Consulting Services",
+      "region": "footer",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail"
+    },
+    {
+      "to": "https://xoveconsulting.com/nexgentechnologies.php",
+      "href": "nexgentechnologies.php",
+      "text": "NexGen Technologies",
+      "region": "footer",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail-page3"
+    },
+    {
+      "to": "https://xoveconsulting.com/nichestaffingservices.php",
+      "href": "nichestaffingservices.php",
+      "text": "Niche Staffing Services",
+      "region": "footer",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail-page4"
+    },
+    {
+      "to": "https://xoveconsulting.com/industries.php",
+      "href": "industries.php",
+      "text": "Industries",
+      "region": "header",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail-page2"
+    },
+    {
+      "to": "https://xoveconsulting.com/engagement-models.php",
+      "href": "engagement-models.php",
+      "text": "Engagement Models",
+      "region": "header",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "site-detail-page3"
+    },
+    {
+      "to": "https://xoveconsulting.com/careers.php",
+      "href": "careers.php",
+      "text": "Careers",
+      "region": "header",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": "careers"
+    },
+    {
+      "to": "https://xoveconsulting.com/contact.php",
+      "href": "contact.php",
+      "text": "Contact Xove",
+      "region": "header",
+      "seenOn": "https://xoveconsulting.com/",
+      "template": null
+    }
+  ],
+  "templates": [
+    {
+      "id": "home",
+      "name": "HomePage",
+      "urlPatterns": [
+        "/"
+      ],
+      "pages": [
+        "https://xoveconsulting.com/"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Xove Consulting Services :: Home",
+      "sharedHeadings": [
+        "Customer Satisfaction",
+        "Xove Consulting Our Company Our Services Our Industries",
+        "Our Services",
+        "App Development",
+        "E2E QA Services",
+        "Consulting Services",
+        "Niche Staffing Services",
+        "Our Industry Services",
+        "Banking & Financial Services",
+        "Healthcare",
+        "Insurance",
+        "Information & Media",
+        "Travel & Hospitality",
+        "Retail & Consumer Goods",
+        "XOVE SERVICES",
+        "OUR CONTACT INFO"
+      ],
+      "inMenu": false,
+      "linksTo": [],
+      "why": {
+        "rule": "start-page",
+        "says": "the start page: always a page type of its own, since every test starts there"
+      }
+    },
+    {
+      "id": "site-detail",
+      "name": "SiteDetailPage",
+      "urlPatterns": [
+        "/*"
+      ],
+      "pages": [
+        "https://xoveconsulting.com/consulting-services.php",
+        "https://xoveconsulting.com/services.php",
+        "https://xoveconsulting.com/application-development.php"
+      ],
+      "repeated": true,
+      "knownUrls": 3,
+      "titlePattern": null,
+      "sharedHeadings": [
+        "OUR CONTACT INFO"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "family-by-evidence",
+        "says": "its 3 pages read look alike (layout 79% the same, headings 24%), and every page shows the heading \"OUR CONTACT INFO\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule",
+        "joinedBy": [
+          {
+            "rule": "layout-and-some-headings",
+            "pairs": 2
+          }
+        ],
+        "apart": 1
+      }
+    },
+    {
+      "id": "site-detail-page2",
+      "name": "SiteDetailPage2",
+      "urlPatterns": [
+        "/*"
+      ],
+      "pages": [
+        "https://xoveconsulting.com/index.php",
+        "https://xoveconsulting.com/industries.php"
+      ],
+      "repeated": true,
+      "knownUrls": 2,
+      "titlePattern": null,
+      "sharedHeadings": [
+        "Banking & Financial Services",
+        "Healthcare",
+        "Insurance",
+        "Information & Media",
+        "Travel & Hospitality",
+        "Retail & Consumer Goods",
+        "XOVE SERVICES",
+        "OUR CONTACT INFO"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "family-by-evidence",
+        "says": "its 2 pages read look alike (layout 41% the same, headings 47%), and every page shows the heading \"Banking & Financial Services\"; joined by: the headings agree, with some layout shared (1 comparison)",
+        "joinedBy": [
+          {
+            "rule": "headings-agree",
+            "pairs": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "site-detail-page3",
+      "name": "SiteDetailPage3",
+      "urlPatterns": [
+        "/*"
+      ],
+      "pages": [
+        "https://xoveconsulting.com/about.php",
+        "https://xoveconsulting.com/nexgentechnologies.php",
+        "https://xoveconsulting.com/engagement-models.php"
+      ],
+      "repeated": true,
+      "knownUrls": 3,
+      "titlePattern": null,
+      "sharedHeadings": [
+        "XOVE SERVICES",
+        "OUR CONTACT INFO"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "family-by-evidence",
+        "says": "its 3 pages read look alike (layout 79% the same, headings 17%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule",
+        "joinedBy": [
+          {
+            "rule": "layout-and-some-headings",
+            "pairs": 2
+          }
+        ],
+        "apart": 1
+      }
+    },
+    {
+      "id": "site-detail-page4",
+      "name": "SiteDetailPage4",
+      "urlPatterns": [
+        "/*"
+      ],
+      "pages": [
+        "https://xoveconsulting.com/e2eqaservices.php",
+        "https://xoveconsulting.com/nichestaffingservices.php"
+      ],
+      "repeated": true,
+      "knownUrls": 2,
+      "titlePattern": null,
+      "sharedHeadings": [
+        "XOVE SERVICES",
+        "OUR CONTACT INFO"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "family-by-evidence",
+        "says": "its 2 pages read look alike (layout 90% the same, headings 20%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (1 comparison)",
+        "joinedBy": [
+          {
+            "rule": "layout-and-some-headings",
+            "pairs": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "careers",
+      "name": "CareersPage",
+      "urlPatterns": [
+        "/*"
+      ],
+      "pages": [
+        "https://xoveconsulting.com/careers.php"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Our Careers - Xove Consulting Services",
+      "sharedHeadings": [
+        "Careers",
+        "Current Openings",
+        "Business Data Analyst",
+        "Sr. Software Developer",
+        "QA Automation",
+        "Hadoop Developer",
+        "QA Mobile Automation",
+        "DevOps Engineer",
+        "ETL Tester",
+        "XOVE SERVICES",
+        "OUR CONTACT INFO"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "tab",
+          "words": [
+            "Business Data Analyst We’re looking for a motivated Busin..."
+          ],
+          "region": "main",
+          "xpath": "//div[div/div/h3[normalize-space()='Business Data Analyst']]",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://xoveconsulting.com/careers.php"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "Sr. Software Developer We're looking for a Sr. Software D..."
+          ],
+          "region": "main",
+          "xpath": "//div[div/div/h3[normalize-space()='Sr. Software Developer']]",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://xoveconsulting.com/careers.php"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "QA Automation Write test plans. Create and execute both f..."
+          ],
+          "region": "main",
+          "xpath": "//div[@id='currentOpenings']//div[div/div/h4[normalize-space()='Knowledge & Experience :']]/div[1]",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://xoveconsulting.com/careers.php"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "Hadoop Developer 2-5 years of overall IT experience. Gene..."
+          ],
+          "region": "main",
+          "xpath": "//div[div/div/h3[normalize-space()='Hadoop Developer']]",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://xoveconsulting.com/careers.php"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "QA Mobile Automation 5+ years of relevant experience in s..."
+          ],
+          "region": "main",
+          "xpath": "//div[@id='currentOpenings']//div[div/div/h4[normalize-space()='Skills/technologies required :']]/div[1]",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://xoveconsulting.com/careers.php"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "DevOps Engineer Develop PowerShell scripts to provide rel..."
+          ],
+          "region": "main",
+          "xpath": "//div[@id='currentOpenings']//div[div/div/h4[normalize-space()='Qualifications :']]/div[1]",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://xoveconsulting.com/careers.php"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "ETL Tester Acts as lead on the creation, maintenance and..."
+          ],
+          "region": "main",
+          "xpath": "//div[@id='currentOpenings']//div[div/div/h4[normalize-space()='Required Skills :']]/div[1]",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://xoveconsulting.com/careers.php"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /application-development.php, shares 67% of its layout and 17% of its headings)"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://xoveconsulting.com/contact.php",
+      "reason": "answered 409"
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (compatible; SuiteBuilder/1.0; +https://github.com/ghost-in-the-kernel/suite-builder)"
+}

@@ -1,0 +1,1127 @@
+{
+  "version": 2,
+  "crawl": {
+    "file": "crawl/xoveconsulting.com.crawl.json",
+    "sha256": "620aa46c181e59022160dcaced4a9e875b05bc4e9675d59d1e054205bdf3ec83"
+  },
+  "entities": {
+    "type:/": {
+      "kind": "type",
+      "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]",
+      "facts": [
+        "page HomePage",
+        "page HomePage opens ()",
+        "page HomePage url-shapes /",
+        "page HomePage title is \"Xove Consulting Services :: Home\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomePage.java",
+          "line": 41,
+          "fact": "page HomePage",
+          "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomePage.java",
+          "line": 59,
+          "fact": "page HomePage opens ()",
+          "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomePage.java",
+          "line": 71,
+          "fact": "page HomePage url-shapes /",
+          "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomePage.java",
+          "line": 52,
+          "fact": "page HomePage title is \"Xove Consulting Services :: Home\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "check:/:Customer Satisfaction": {
+      "kind": "check",
+      "why": "every page of HomePage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page HomePage loaded-when \"Customer Satisfaction\"",
+        "page HomePage check \"Customer Satisfaction\" spelled \"Customer Satisfaction\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomePage.java",
+          "line": 81,
+          "fact": "page HomePage loaded-when \"Customer Satisfaction\"",
+          "why": "every page of HomePage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomeElements.java",
+          "line": 20,
+          "fact": "page HomePage check \"Customer Satisfaction\" spelled \"Customer Satisfaction\"",
+          "why": "every page of HomePage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/:Xove Consulting Our Company Our Services Our Industries": {
+      "kind": "check",
+      "why": "every page of HomePage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page HomePage loaded-when \"Xove Consulting Our Company Our Services Our Industries\"",
+        "page HomePage check \"Xove Consulting Our Company Our Services Our Industries\" spelled \"Xove Consulting Our Company Our Services Our Industries\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomePage.java",
+          "line": 81,
+          "fact": "page HomePage loaded-when \"Xove Consulting Our Company Our Services Our Industries\"",
+          "why": "every page of HomePage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomeElements.java",
+          "line": 22,
+          "fact": "page HomePage check \"Xove Consulting Our Company Our Services Our Industries\" spelled \"Xove Consulting Our Company Our Services Our Industries\"",
+          "why": "every page of HomePage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/:Our Services": {
+      "kind": "check",
+      "why": "every page of HomePage the crawl read showed it (1 page)",
+      "facts": [
+        "page HomePage check \"Our Services\" spelled \"Our Services\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomeElements.java",
+          "line": 24,
+          "fact": "page HomePage check \"Our Services\" spelled \"Our Services\"",
+          "why": "every page of HomePage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/:App Development": {
+      "kind": "check",
+      "why": "every page of HomePage the crawl read showed it (1 page)",
+      "facts": [
+        "page HomePage check \"App Development\" spelled \"App Development\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomeElements.java",
+          "line": 26,
+          "fact": "page HomePage check \"App Development\" spelled \"App Development\"",
+          "why": "every page of HomePage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/:E2E QA Services": {
+      "kind": "check",
+      "why": "every page of HomePage the crawl read showed it (1 page)",
+      "facts": [
+        "page HomePage check \"E2E QA Services\" spelled \"E2E QA Services\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomeElements.java",
+          "line": 28,
+          "fact": "page HomePage check \"E2E QA Services\" spelled \"E2E QA Services\"",
+          "why": "every page of HomePage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/:Consulting Services": {
+      "kind": "check",
+      "why": "every page of HomePage the crawl read showed it (1 page)",
+      "facts": [
+        "page HomePage check \"Consulting Services\" spelled \"Consulting Services\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/home/HomeElements.java",
+          "line": 30,
+          "fact": "page HomePage check \"Consulting Services\" spelled \"Consulting Services\"",
+          "why": "every page of HomePage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "type:/*": {
+      "kind": "type",
+      "why": "its 3 pages read look alike (layout 79% the same, headings 24%), and every page shows the heading \"OUR CONTACT INFO\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule [rules: family-by-evidence; layout-and-some-headings x2; no rule x1]",
+      "facts": [
+        "page SiteDetailPage",
+        "page SiteDetailPage opens (name)",
+        "page SiteDetailPage url-shapes /*",
+        "page SiteDetailPage2",
+        "page SiteDetailPage2 opens (name)",
+        "page SiteDetailPage2 url-shapes /*",
+        "page SiteDetailPage3",
+        "page SiteDetailPage3 opens (name)",
+        "page SiteDetailPage3 url-shapes /*",
+        "page SiteDetailPage4",
+        "page SiteDetailPage4 opens (name)",
+        "page SiteDetailPage4 url-shapes /*"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/consulting-services.php",
+          "snapshot": "crawl/pages/consulting-services.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/services.php",
+          "snapshot": "crawl/pages/services.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/application-development.php",
+          "snapshot": "crawl/pages/application-development.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/index.php",
+          "snapshot": "crawl/pages/index.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/industries.php",
+          "snapshot": "crawl/pages/industries.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/about.php",
+          "snapshot": "crawl/pages/about.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/nexgentechnologies.php",
+          "snapshot": "crawl/pages/nexgentechnologies.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/engagement-models.php",
+          "snapshot": "crawl/pages/engagement-models.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/e2eqaservices.php",
+          "snapshot": "crawl/pages/e2eqaservices.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/nichestaffingservices.php",
+          "snapshot": "crawl/pages/nichestaffingservices.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetail/SiteDetailPage.java",
+          "line": 48,
+          "fact": "page SiteDetailPage",
+          "why": "its 3 pages read look alike (layout 79% the same, headings 24%), and every page shows the heading \"OUR CONTACT INFO\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule [rules: family-by-evidence; layout-and-some-headings x2; no rule x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetail/SiteDetailPage.java",
+          "line": 77,
+          "fact": "page SiteDetailPage opens (name)",
+          "why": "its 3 pages read look alike (layout 79% the same, headings 24%), and every page shows the heading \"OUR CONTACT INFO\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule [rules: family-by-evidence; layout-and-some-headings x2; no rule x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetail/SiteDetailPage.java",
+          "line": 61,
+          "fact": "page SiteDetailPage url-shapes /*",
+          "why": "its 3 pages read look alike (layout 79% the same, headings 24%), and every page shows the heading \"OUR CONTACT INFO\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule [rules: family-by-evidence; layout-and-some-headings x2; no rule x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage2/SiteDetailPage2.java",
+          "line": 45,
+          "fact": "page SiteDetailPage2",
+          "why": "its 2 pages read look alike (layout 41% the same, headings 47%), and every page shows the heading \"Banking & Financial Services\"; joined by: the headings agree, with some layout shared (1 comparison) [rules: family-by-evidence; headings-agree x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage2/SiteDetailPage2.java",
+          "line": 73,
+          "fact": "page SiteDetailPage2 opens (name)",
+          "why": "its 2 pages read look alike (layout 41% the same, headings 47%), and every page shows the heading \"Banking & Financial Services\"; joined by: the headings agree, with some layout shared (1 comparison) [rules: family-by-evidence; headings-agree x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage2/SiteDetailPage2.java",
+          "line": 58,
+          "fact": "page SiteDetailPage2 url-shapes /*",
+          "why": "its 2 pages read look alike (layout 41% the same, headings 47%), and every page shows the heading \"Banking & Financial Services\"; joined by: the headings agree, with some layout shared (1 comparison) [rules: family-by-evidence; headings-agree x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage3/SiteDetailPage3.java",
+          "line": 48,
+          "fact": "page SiteDetailPage3",
+          "why": "its 3 pages read look alike (layout 79% the same, headings 17%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule [rules: family-by-evidence; layout-and-some-headings x2; no rule x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage3/SiteDetailPage3.java",
+          "line": 77,
+          "fact": "page SiteDetailPage3 opens (name)",
+          "why": "its 3 pages read look alike (layout 79% the same, headings 17%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule [rules: family-by-evidence; layout-and-some-headings x2; no rule x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage3/SiteDetailPage3.java",
+          "line": 61,
+          "fact": "page SiteDetailPage3 url-shapes /*",
+          "why": "its 3 pages read look alike (layout 79% the same, headings 17%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (2 comparisons); 1 comparison held by no rule [rules: family-by-evidence; layout-and-some-headings x2; no rule x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage4/SiteDetailPage4.java",
+          "line": 45,
+          "fact": "page SiteDetailPage4",
+          "why": "its 2 pages read look alike (layout 90% the same, headings 20%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (1 comparison) [rules: family-by-evidence; layout-and-some-headings x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage4/SiteDetailPage4.java",
+          "line": 73,
+          "fact": "page SiteDetailPage4 opens (name)",
+          "why": "its 2 pages read look alike (layout 90% the same, headings 20%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (1 comparison) [rules: family-by-evidence; layout-and-some-headings x1]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/sitedetailpage4/SiteDetailPage4.java",
+          "line": 58,
+          "fact": "page SiteDetailPage4 url-shapes /*",
+          "why": "its 2 pages read look alike (layout 90% the same, headings 20%), and every page shows the heading \"XOVE SERVICES\"; joined by: the layouts agree, with some headings shared (1 comparison) [rules: family-by-evidence; layout-and-some-headings x1]"
+        }
+      ]
+    },
+    "check:/*:Banking & Financial Services": {
+      "kind": "check",
+      "why": "every page of SiteDetailPage2 the crawl read showed it (2 pages); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page SiteDetailPage2 loaded-when \"Banking & Financial Services\"",
+        "page SiteDetailPage2 check \"Banking & Financial Services\" spelled \"Banking & Financial Services\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/index.php",
+          "snapshot": "crawl/pages/index.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/industries.php",
+          "snapshot": "crawl/pages/industries.php.html"
+        }
+      ],
+      "generated": []
+    },
+    "check:/*:Healthcare": {
+      "kind": "check",
+      "why": "every page of SiteDetailPage2 the crawl read showed it (2 pages); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page SiteDetailPage2 loaded-when \"Healthcare\"",
+        "page SiteDetailPage2 check \"Healthcare\" spelled \"Healthcare\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/index.php",
+          "snapshot": "crawl/pages/index.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/industries.php",
+          "snapshot": "crawl/pages/industries.php.html"
+        }
+      ],
+      "generated": []
+    },
+    "type:/careers.php": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /application-development.php, shares 67% of its layout and 17% of its headings) [rules: unlike-others]",
+      "facts": [
+        "page CareersPage",
+        "page CareersPage opens ()",
+        "page CareersPage url-shapes /careers.php",
+        "page CareersPage title is \"Our Careers - Xove Consulting Services\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/careers.php",
+          "snapshot": "crawl/pages/careers.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersPage.java",
+          "line": 42,
+          "fact": "page CareersPage",
+          "why": "no other page read is enough like it (the closest, /application-development.php, shares 67% of its layout and 17% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersPage.java",
+          "line": 60,
+          "fact": "page CareersPage opens ()",
+          "why": "no other page read is enough like it (the closest, /application-development.php, shares 67% of its layout and 17% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersPage.java",
+          "line": 72,
+          "fact": "page CareersPage url-shapes /careers.php",
+          "why": "no other page read is enough like it (the closest, /application-development.php, shares 67% of its layout and 17% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersPage.java",
+          "line": 53,
+          "fact": "page CareersPage title is \"Our Careers - Xove Consulting Services\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "check:/careers.php:Careers": {
+      "kind": "check",
+      "why": "every page of CareersPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page CareersPage loaded-when \"Careers\"",
+        "page CareersPage check \"Careers\" spelled \"Careers\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/careers.php",
+          "snapshot": "crawl/pages/careers.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersPage.java",
+          "line": 82,
+          "fact": "page CareersPage loaded-when \"Careers\"",
+          "why": "every page of CareersPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersElements.java",
+          "line": 20,
+          "fact": "page CareersPage check \"Careers\" spelled \"Careers\"",
+          "why": "every page of CareersPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/careers.php:Current Openings": {
+      "kind": "check",
+      "why": "every page of CareersPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page CareersPage loaded-when \"Current Openings\"",
+        "page CareersPage check \"Current Openings\" spelled \"Current Openings\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/careers.php",
+          "snapshot": "crawl/pages/careers.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersPage.java",
+          "line": 82,
+          "fact": "page CareersPage loaded-when \"Current Openings\"",
+          "why": "every page of CareersPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersElements.java",
+          "line": 22,
+          "fact": "page CareersPage check \"Current Openings\" spelled \"Current Openings\"",
+          "why": "every page of CareersPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/careers.php:Business Data Analyst": {
+      "kind": "check",
+      "why": "every page of CareersPage the crawl read showed it (1 page)",
+      "facts": [
+        "page CareersPage check \"Business Data Analyst\" spelled \"Business Data Analyst\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/careers.php",
+          "snapshot": "crawl/pages/careers.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersElements.java",
+          "line": 24,
+          "fact": "page CareersPage check \"Business Data Analyst\" spelled \"Business Data Analyst\"",
+          "why": "every page of CareersPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/careers.php:Sr. Software Developer": {
+      "kind": "check",
+      "why": "every page of CareersPage the crawl read showed it (1 page)",
+      "facts": [
+        "page CareersPage check \"Sr. Software Developer\" spelled \"Sr. Software Developer\""
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/careers.php",
+          "snapshot": "crawl/pages/careers.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/careers/CareersElements.java",
+          "line": 26,
+          "fact": "page CareersPage check \"Sr. Software Developer\" spelled \"Sr. Software Developer\"",
+          "why": "every page of CareersPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "menu:header:/index.php": {
+      "kind": "menu",
+      "why": "a header link seen on /",
+      "facts": [
+        "menu xoveConsultingServices -> SiteDetailPage2 clicks /index.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 36,
+          "fact": "menu xoveConsultingServices -> SiteDetailPage2 clicks /index.php",
+          "why": "a header link seen on /"
+        }
+      ]
+    },
+    "menu:header:/about.php": {
+      "kind": "menu",
+      "why": "a header link seen on /",
+      "facts": [
+        "menu aboutXove -> SiteDetailPage3 clicks /about.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 43,
+          "fact": "menu aboutXove -> SiteDetailPage3 clicks /about.php",
+          "why": "a header link seen on /"
+        }
+      ]
+    },
+    "menu:header:/services.php": {
+      "kind": "menu",
+      "why": "a header link seen on /",
+      "facts": [
+        "menu xoveServices -> SiteDetailPage clicks /services.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 50,
+          "fact": "menu xoveServices -> SiteDetailPage clicks /services.php",
+          "why": "a header link seen on /"
+        }
+      ]
+    },
+    "menu:footer:/application-development.php": {
+      "kind": "menu",
+      "why": "a footer link seen on /",
+      "facts": [
+        "menu appDevelopment -> SiteDetailPage clicks /application-development.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 88,
+          "fact": "menu appDevelopment -> SiteDetailPage clicks /application-development.php",
+          "why": "a footer link seen on /"
+        }
+      ]
+    },
+    "menu:footer:/e2eqaservices.php": {
+      "kind": "menu",
+      "why": "a footer link seen on /",
+      "facts": [
+        "menu e2eQaServices -> SiteDetailPage4 clicks /e2eqaservices.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 95,
+          "fact": "menu e2eQaServices -> SiteDetailPage4 clicks /e2eqaservices.php",
+          "why": "a footer link seen on /"
+        }
+      ]
+    },
+    "menu:footer:/consulting-services.php": {
+      "kind": "menu",
+      "why": "a footer link seen on /",
+      "facts": [
+        "menu consultingServices -> SiteDetailPage clicks /consulting-services.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 102,
+          "fact": "menu consultingServices -> SiteDetailPage clicks /consulting-services.php",
+          "why": "a footer link seen on /"
+        }
+      ]
+    },
+    "menu:footer:/nexgentechnologies.php": {
+      "kind": "menu",
+      "why": "a footer link seen on /",
+      "facts": [
+        "menu nexGenTechnologies -> SiteDetailPage3 clicks /nexgentechnologies.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 109,
+          "fact": "menu nexGenTechnologies -> SiteDetailPage3 clicks /nexgentechnologies.php",
+          "why": "a footer link seen on /"
+        }
+      ]
+    },
+    "menu:footer:/nichestaffingservices.php": {
+      "kind": "menu",
+      "why": "a footer link seen on /",
+      "facts": [
+        "menu nicheStaffingServices -> SiteDetailPage4 clicks /nichestaffingservices.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 116,
+          "fact": "menu nicheStaffingServices -> SiteDetailPage4 clicks /nichestaffingservices.php",
+          "why": "a footer link seen on /"
+        }
+      ]
+    },
+    "menu:header:/industries.php": {
+      "kind": "menu",
+      "why": "a header link seen on /",
+      "facts": [
+        "menu industries -> SiteDetailPage2 clicks /industries.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 57,
+          "fact": "menu industries -> SiteDetailPage2 clicks /industries.php",
+          "why": "a header link seen on /"
+        }
+      ]
+    },
+    "menu:header:/engagement-models.php": {
+      "kind": "menu",
+      "why": "a header link seen on /",
+      "facts": [
+        "menu engagementModels -> SiteDetailPage3 clicks /engagement-models.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 64,
+          "fact": "menu engagementModels -> SiteDetailPage3 clicks /engagement-models.php",
+          "why": "a header link seen on /"
+        }
+      ]
+    },
+    "menu:header:/careers.php": {
+      "kind": "menu",
+      "why": "a header link seen on /",
+      "facts": [
+        "menu careers -> CareersPage clicks /careers.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 71,
+          "fact": "menu careers -> CareersPage clicks /careers.php",
+          "why": "a header link seen on /"
+        }
+      ]
+    },
+    "menu:header:/contact.php": {
+      "kind": "menu",
+      "why": "a header link seen on /",
+      "facts": [
+        "menu contactXove -> /contact.php clicks /contact.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/xoveconsulting/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 78,
+          "fact": "menu contactXove -> /contact.php clicks /contact.php",
+          "why": "a header link seen on /"
+        }
+      ]
+    },
+    "test:smoke:/": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke HomePage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/SmokeTest.java",
+          "line": 24,
+          "fact": "test smoke HomePage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/*": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 3 of 3 crawled examples",
+      "facts": [
+        "test smoke SiteDetailPage opens 3 of 3 proof loaded",
+        "test smoke SiteDetailPage2 opens 2 of 2 proof headings",
+        "test smoke SiteDetailPage3 opens 3 of 3 proof loaded",
+        "test smoke SiteDetailPage4 opens 2 of 2 proof loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/consulting-services.php",
+          "snapshot": "crawl/pages/consulting-services.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/services.php",
+          "snapshot": "crawl/pages/services.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/application-development.php",
+          "snapshot": "crawl/pages/application-development.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/index.php",
+          "snapshot": "crawl/pages/index.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/industries.php",
+          "snapshot": "crawl/pages/industries.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/about.php",
+          "snapshot": "crawl/pages/about.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/nexgentechnologies.php",
+          "snapshot": "crawl/pages/nexgentechnologies.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/engagement-models.php",
+          "snapshot": "crawl/pages/engagement-models.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/e2eqaservices.php",
+          "snapshot": "crawl/pages/e2eqaservices.php.html"
+        },
+        {
+          "url": "https://xoveconsulting.com/nichestaffingservices.php",
+          "snapshot": "crawl/pages/nichestaffingservices.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/SmokeTest.java",
+          "line": 30,
+          "fact": "test smoke SiteDetailPage opens 3 of 3 proof loaded",
+          "why": "every page type gets a smoke test; it opens 3 of 3 crawled examples"
+        },
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/SmokeTest.java",
+          "line": 38,
+          "fact": "test smoke SiteDetailPage2 opens 2 of 2 proof headings",
+          "why": "every page type gets a smoke test; it opens 2 of 2 crawled examples"
+        },
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/SmokeTest.java",
+          "line": 46,
+          "fact": "test smoke SiteDetailPage3 opens 3 of 3 proof loaded",
+          "why": "every page type gets a smoke test; it opens 3 of 3 crawled examples"
+        },
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/SmokeTest.java",
+          "line": 54,
+          "fact": "test smoke SiteDetailPage4 opens 2 of 2 proof loaded",
+          "why": "every page type gets a smoke test; it opens 2 of 2 crawled examples"
+        }
+      ]
+    },
+    "test:smoke:/careers.php": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke CareersPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/careers.php",
+          "snapshot": "crawl/pages/careers.php.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/SmokeTest.java",
+          "line": 62,
+          "fact": "test smoke CareersPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:menu:header:/index.php": {
+      "kind": "test",
+      "why": "the header link \"Xove Consulting Services\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() xoveConsultingServices then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 20,
+          "fact": "test menu follow HomePage() xoveConsultingServices then loaded",
+          "why": "the header link \"Xove Consulting Services\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:header:/about.php": {
+      "kind": "test",
+      "why": "the header link \"About Xove\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() aboutXove then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 26,
+          "fact": "test menu follow HomePage() aboutXove then loaded",
+          "why": "the header link \"About Xove\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:header:/services.php": {
+      "kind": "test",
+      "why": "the header link \"Xove Services\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() xoveServices then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 32,
+          "fact": "test menu follow HomePage() xoveServices then loaded",
+          "why": "the header link \"Xove Services\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:footer:/application-development.php": {
+      "kind": "test",
+      "why": "the footer link \"App Development\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() appDevelopment then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 38,
+          "fact": "test menu follow HomePage() appDevelopment then loaded",
+          "why": "the footer link \"App Development\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:footer:/e2eqaservices.php": {
+      "kind": "test",
+      "why": "the footer link \"E2E QA Services\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() e2eQaServices then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 44,
+          "fact": "test menu follow HomePage() e2eQaServices then loaded",
+          "why": "the footer link \"E2E QA Services\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:footer:/consulting-services.php": {
+      "kind": "test",
+      "why": "the footer link \"Consulting Services\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() consultingServices then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 50,
+          "fact": "test menu follow HomePage() consultingServices then loaded",
+          "why": "the footer link \"Consulting Services\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:footer:/nexgentechnologies.php": {
+      "kind": "test",
+      "why": "the footer link \"NexGen Technologies\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() nexGenTechnologies then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 56,
+          "fact": "test menu follow HomePage() nexGenTechnologies then loaded",
+          "why": "the footer link \"NexGen Technologies\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:footer:/nichestaffingservices.php": {
+      "kind": "test",
+      "why": "the footer link \"Niche Staffing Services\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() nicheStaffingServices then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 62,
+          "fact": "test menu follow HomePage() nicheStaffingServices then loaded",
+          "why": "the footer link \"Niche Staffing Services\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:header:/industries.php": {
+      "kind": "test",
+      "why": "the header link \"Industries\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() industries then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 68,
+          "fact": "test menu follow HomePage() industries then loaded",
+          "why": "the header link \"Industries\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:header:/engagement-models.php": {
+      "kind": "test",
+      "why": "the header link \"Engagement Models\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() engagementModels then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 74,
+          "fact": "test menu follow HomePage() engagementModels then loaded",
+          "why": "the header link \"Engagement Models\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:header:/careers.php": {
+      "kind": "test",
+      "why": "the header link \"Careers\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() careers then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 80,
+          "fact": "test menu follow HomePage() careers then loaded",
+          "why": "the header link \"Careers\", shown on the page: followed"
+        }
+      ]
+    },
+    "test:menu:header:/contact.php": {
+      "kind": "test",
+      "why": "the header link \"Contact Xove\", shown on the page: followed",
+      "facts": [
+        "test menu follow HomePage() contactXove then on /contact.php"
+      ],
+      "evidence": [
+        {
+          "url": "https://xoveconsulting.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/xoveconsulting/tests/cases/NavigationTest.java",
+          "line": 86,
+          "fact": "test menu follow HomePage() contactXove then on /contact.php",
+          "why": "the header link \"Contact Xove\", shown on the page: followed"
+        }
+      ]
+    }
+  }
+}
